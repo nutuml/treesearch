@@ -1,0 +1,32 @@
+{
+    "name": "autowrap",
+    "version": "1.0.0",
+    "description": "Treesearch is a library to make tree search easy.",
+    "main": "./cjs/index.js",
+    "scripts": {
+      "tsc": "tsc",
+      "build": "webpack",
+      "release": "webpack --config config/webpack.release.js --progress --color",
+      "start": "webpack serve --open"
+    },
+    "devDependencies": {
+      "ts-loader": "^9.2.6",
+      "typescript": "^4.5.4",
+      "webpack": "^5.65.0",
+      "webpack-cli": "^4.9.1",
+      "webpack-dev-server": "^4.7.3"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/nutuml/treesearch.git"
+    },
+    "keywords": [
+      "tree","search"
+    ],
+    "author": "junfengliang",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/nutuml/treesearch/issues"
+    },
+    "homepage": "https://github.com/nutuml/treesearchp#readme"
+}
