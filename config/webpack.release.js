@@ -19,10 +19,10 @@ module.exports = {
       extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
-      filename: 'nutuml.min.js',
+      filename: 'treesearch.min.js',
       path: path.resolve(__dirname,'../dist'),
       library: {
-        name: 'nutuml',
+        name: 'tse',
         type: 'umd',
         export: 'default',
       },

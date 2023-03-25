@@ -36,7 +36,7 @@ const tree = [
                 title: 'o22',
                 children: [
                     {
-                        id: 221,
+                        id: 22,
                         title: 'o221'
                     }
                 ]

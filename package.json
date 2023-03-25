@@ -1,7 +1,7 @@
 {
-    "name": "autowrap",
-    "version": "1.0.0",
-    "description": "Treesearch is a library to make tree search easy.",
+    "name": "tree-search-easy",
+    "version": "1.0.1",
+    "description": "treesearch is a library to make tree search easy.",
     "main": "./cjs/index.js",
     "scripts": {
       "tsc": "tsc",

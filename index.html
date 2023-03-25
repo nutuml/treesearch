@@ -8,13 +8,105 @@
     <script src="treesearch.js"></script>
     <div id="test"></div>
     <script>
-    var text = `
-# Root
-## AA
-## BB
-## CC
-`
-      document.getElementById("test").innerHTML = nutuml.render(text);
+   
+const t2 = [
+    {
+        userId: '1',
+        username: 'a',
+        cs:[
+            {
+                userId: '11',
+                username: 'ab',
+            },
+            {
+                userId: 'ac',
+                username: 'cat',
+            },
+        ]
+    },
+    {
+        userId: 'b',
+        username: 'bob'
+    }
+]
+
+var r2 = tse.search(t2,'ba',{id:'userId',title:'username',children:'cs'})
+console.log(JSON.stringify(r2))
+
+
+
+const tree = [
+    {
+        id:1,
+        title: 'abc',
+        children: [
+            {
+                id: 11,
+                title: 'oo22',
+                children: [
+                    {
+                        id: 111,
+                        title: 'aao22'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id:2,
+        title: 'o2',
+        children: [
+            {
+                id: 21,
+                title: 'o21',
+                children: [
+                    {
+                        id: 211,
+                        title: 'o211'
+                    }
+                ]
+            },
+            {
+                id: 22,
+                title: 'o22',
+                children: [
+                    {
+                        id: 221,
+                        title: 'o221'
+                    }
+                ]
+            }
+        ]
+    }
+]
+var res = tse.search(tree,'o22')
+console.log(JSON.stringify(res))
+
+const treeData = [
+    {
+        id:'1',
+        title: 'a',
+        children: [
+            {
+                id: '11',
+                title: 'b',
+                children: [
+                    {
+                        id: '111',
+                        title: 'c'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id:'2',
+        title: '2'
+    }
+]
+var rt = tse.search(treeData,'b')
+console.log(JSON.stringify(rt))
     </script>
+    just a test
   </body>
 </html>

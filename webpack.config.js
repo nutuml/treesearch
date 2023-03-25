@@ -32,7 +32,7 @@ module.exports = {
       filename: 'treesearch.js',
       path: path.resolve(__dirname, 'dist'),
       library: {
-        name: 'treesearch',
+        name: 'tse',
         type: 'umd',
         export: 'default',
       },
